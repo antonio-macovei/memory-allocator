@@ -1,0 +1,22 @@
+Copyright 2017 Macovei Antonio Dan
+
+Alocator de memorie - proiect
+
+Referinte: https://ocw.cs.pub.ro/courses/programare/teme_2017/proiect_2017_ca
+
+Se citesc comenzile pe rand si se executa tot atunci. Fiecare comanda este memorata intr-un vector in care pe pozitia 0 se afla comanda propriu-zisa, iar pe celelalte pozitii se afla parametrii. Dupa executia unei comenzi, se elibereaza memoria folosita de aceasta.
+
+Functia INITIALIZE aloca memorie de dimensiunea primita ca parametru pentru arena.
+Functia FINALIZE elibereaza memoria alocata.
+Functia ALLOC gestioneaza memoria in interiorul arenei, setand in functie de 3 cazuri indicii blocurilor.
+Cazul 1 presupune ca arena este goala si aloca la inceputul ei, setand indexul de start.
+Cazul 2 presupune ca arena are spatii goale intre blocuri, iar daca acestea sunt gasite, se aloca un nou bloc in acel spatiu, modificand atat indicele blocului urmator, cat si al celui precedent.
+Cazul 3 presupune ca nu exista spatii intre blocurile deja alocate (cel putin 1 bloc alocat), si il aloca la sfarsit, modificand indicele blocului precedent.
+Functia FREE modifica indicii zonelor de gestiune ale blocurilor precedente, respectiv urmator, fara a modifica datele existente in blocul eliberat.
+Functia SHOW calculeaza statisticile arenei parcurgand toata arena pana la final si adunand pe parcurs informatii (numarul de octeti liberi/folositi, etc).
+Functia FILL parcurge zona din arena incepand cu indicele primit ca parametru si pune valoarea primita pe fiecare octet.
+Functia DUMP afiseaza arena in formatul specificat de enunt, in format hexadecimal.
+
+Programul se inchie odata cu functia FINALIZE.
+
+
