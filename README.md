@@ -4,13 +4,13 @@ References: https://ocw.cs.pub.ro/courses/programare/teme_2017/proiect_2017_ca
   
 Available commands:  
   
-INITIALIZE <N>  
+INITIALIZE N  
 FINALIZE  
 DUMP  
-ALLOC <SIZE>  
-FREE <INDEX>  
-FILL <INDEX> <SIZE> <VALUE>  
-SHOW <INFO>  
+ALLOC SIZE  
+FREE INDEX  
+FILL INDEX SIZE VALUE  
+SHOW INFO  
 
 INFO can be one of the following: FREE, USAGE, ALLOCATIONS    
 
