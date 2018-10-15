@@ -4,15 +4,15 @@ References: https://ocw.cs.pub.ro/courses/programare/teme_2017/proiect_2017_ca
   
 Available commands:  
   
-INITIALIZE N  
+INITIALIZE n  
 FINALIZE  
 DUMP  
-ALLOC SIZE  
-FREE INDEX  
-FILL INDEX SIZE VALUE  
-SHOW INFO  
+ALLOC size  
+FREE index  
+FILL index size value  
+SHOW info  
 
-INFO can be one of the following: FREE, USAGE, ALLOCATIONS    
+info can be one of the following: FREE, USAGE, ALLOCATIONS    
 
 The programs runs until it receives the FINALIZE command.    
 
